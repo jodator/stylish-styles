@@ -1,0 +1,95 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document regexp("http://localhost:63342/.*/coverage/.*") {
+	body {
+		background: #2b2b2b;
+		color: #808080;
+	}
+
+	.fl {
+		color: #a9b7c6;
+	}
+
+	.fraction {
+		background: #3a3a3a;
+		color: #8c8c8c;
+	}
+
+	a {
+		color: #287bde;
+	}
+
+	.cover-empty {
+		background: transparent;
+	}
+
+	.sorter {
+		filter: invert(60%);
+	}
+
+	.coverage-summary tbody,
+	.coverage-summary tbody a {
+		color: #a9b7c6;
+	}
+
+	.quiet,
+	.line-count {
+		color: #606366;
+	}
+
+	span.cline-neutral {
+		background: #2b2b2b;
+	}
+
+	span.cline-any {
+		color: #a9b7c6;
+	}
+
+	.high,
+	.status-line.high,
+	span.cline-yes {
+		background: #485848;
+	}
+
+	.low,
+	span.cline-no,
+	span.cstat-no,
+	span.fstat-no {
+		background: #715353;
+	}
+
+	.medium,
+	span.missing-if-branch,
+	span.cbranch-no {
+		background: #80805a !important;
+	}
+
+	/* CODE */
+	.pln {
+		color: #a9b7c6;
+	}
+
+	.kwd {
+		color: #cc7832;
+	}
+
+	.pun {
+		color: #a9b7c6;
+	}
+
+	.typ {
+		color: #ffc66d;
+	}
+
+	.str {
+		color: #6a8759;
+	}
+
+	.com {
+		color: #808080;
+	}
+
+	.lit {
+		color: #6897bb;
+	}
+}
