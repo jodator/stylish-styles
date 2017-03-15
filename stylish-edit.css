@@ -1,0 +1,267 @@
+@-moz-document url-prefix("about:stylish-edit"), url-prefix("data:text/html") {
+
+	/* monokai */
+	:root {
+		--b1: #2b2b2b !important; /* toolbars */
+		--b2: #2b2b2b !important; /* editor */
+		--b3: #3e3f3c !important; /* button */
+		--t1: #f8f8f0 !important; /* button txt */
+		--b4: #3d3d3b !important; /* name bar input */
+		--t2: #f8f8f0 !important; /* name bar input txt */
+		--b5: #313335 !important; /* gutter */
+		--t3: #606366 !important; /* gutter txt */
+		--to: var(--t3) !important; /* gutter open */
+		--tp: #4ba982 !important; /* gutter close */
+		--b6: #214283 !important; /* selection */
+		--b7: #323232 !important; /* active line */
+		--b8: #3d3d3b !important; /* scrollbar */
+		--t4: var(--b8) !important; /* insert cursor */
+		--t5: #a9b7c6 !important; /* code symbols */
+		--t6: #ffef28 !important; /* code matching bracket */
+		--t7: #f00 !important; /* code mismatching bracket */
+		--t8: #e8bf6a !important; /* code class selector */
+		--t9: var(--t8) !important; /* code id selector */
+		--ta: #dd7a28 !important; /* code element */
+		--tb: #f8f8f0 !important; /* code pseudo selector/element */
+		--tc: #e8bf6a !important; /* code meta */
+		--td: #bababa !important; /* code property */
+		--te: var(--tc) !important; /* code property error */
+		--tf: #6897bb !important; /* code atom */
+		--tg: var(--tf) !important; /* code variable 1 */
+		--th: #6897bb !important; /* code number */
+		--ti: #6a8759 !important; /* code string */
+		--tj: #bababa !important; /* code variable 2 */
+		--tk: #808080 !important; /* code comment */
+		--tl: #dd7a28 !important; /* code @media */
+		--tm: var(--ta) !important; /* code !important */
+		--tn: #bc3f3c !important; /* code error */
+	}
+
+	/* interface */
+	.devtools-monospace, .textbox-input-box, label[control="name"][accesskey="n"] {
+		font-family: monospace !important;
+		font-size: 14px !important;
+	}
+	/* fonts */
+	#main-area > hbox {
+		background: var(--b1) !important;
+		color: var(--t1) !important;
+		padding: 0 !important;
+	}
+	/* button bar */
+	#editor-tools {
+		margin-bottom: -22px !important;
+		margin-left: 3px !important;
+		margin-top: 8px !important;
+		position: relative !important;
+	}
+	/* button bar */
+	.devtools-separator, .button-menu-dropmarker {
+		display: none !important;
+	}
+	/* button bar divider, button dropmarker */
+	#save-button, #preview-button, #check-for-errors-button, .devtools-toolbarbutton {
+		background: var(--b3) !important;
+		color: var(--t1) !important;
+	}
+	/* button */
+	vbox > grid {
+		display: block;
+	}
+	/* name bar */
+	vbox > grid > rows {
+		margin-left: 500px;
+		position: relative;
+		top: -7px;
+	}
+	/* name bar top */
+	#main-area.theme-toolbar {
+		background: var(--b1) !important;
+	}
+	/* name bar bg */
+	label[control="name"] {
+		color: var(--t1) !important;
+		font-weight: 700 !important;
+		padding-left: 2px !important;
+	}
+	/* name bar text */
+	.devtools-textinput {
+		height: 24px !important;
+		width: 500px !important;
+	}
+	/* name bar input */
+	textbox {
+		border: none !important;
+	}
+	/* name bar input */
+	input, #name {
+		background: var(--b4) !important;
+		color: var(--t2) !important;
+	}
+	/* name bar input */
+	.devtools-horizontal-splitter {
+		opacity: 0 !important;
+	}
+	/* name bar divider */
+	.CodeMirror-dialog {
+		background: var(--b1) !important;
+		border: none !important;
+	}
+	/* search */
+	.devtools-monospace {
+		background: var(--b2) !important;
+	}
+	/* editor */
+	#editor {
+		margin-left: -3px !important;
+	}
+	/* editor margin */
+	.CodeMirror-gutters {
+		background: var(--b5) !important;
+		border-right: 0px !important;
+	}
+	/* gutters */
+	.CodeMirror-linenumber.CodeMirror-gutter-elt {
+		color: var(--t3) !important;
+	}
+	/* gutter text */
+	.CodeMirror-foldgutter-open {
+		color: var(--to) !important;
+	}
+	/* gutter open */
+	.CodeMirror-foldgutter-folded {
+		color: var(--tp) !important;
+	}
+	/* gutter close */
+	.cm-s-mozilla div.CodeMirror-selected {
+		background: var(--b6) !important;
+	}
+	/* selection */
+	.CodeMirror-activeline-background {
+		background: var(--b7) !important;
+	}
+	/* active line */
+	.theme-toolbar {
+		color: var(--t1) !important;
+	}
+	/* code info */
+
+	/* code */
+	.CodeMirror-overwrite .CodeMirror-cursor {
+		border-left: 8px solid var(--t4) !important;
+	}
+	/* insert cursor */
+	.cm-s-mozilla pre:not(hing) {
+		color: inherit !important;
+	}
+	/* symbols */
+	.cm-s-mozilla {
+		color: var(--t5) !important;
+	}
+	/* symbols */
+	.cm-s-mozilla span.cm-atom {
+		color: var(--tf) !important;
+	}
+	/* atom */
+	.cm-s-mozilla span.cm-variable {
+		color: var(--tg) !important;
+	}
+	/* variable 1 */
+	.cm-s-mozilla span.cm-builtin {
+		color: var(--t9) !important;
+	}
+	/* id selector */
+	.cm-s-mozilla span.cm-comment {
+		color: var(--tk) !important;
+	}
+	/* comment */
+	.cm-s-mozilla span.cm-def {
+		color: var(--tl) !important;
+	}
+	/* @media */
+	.cm-s-mozilla span.cm-keyword {
+		color: var(--tm) !important;
+	}
+	/* !important */
+	.cm-s-mozilla span.cm-error {
+		color: var(--tn) !important;
+	}
+	/* error */
+	.cm-s-mozilla span.cm-meta {
+		color: var(--tc) !important;
+	}
+	/* meta */
+	.cm-s-mozilla span.cm-property {
+		color: var(--td) !important;
+	}
+	/* property */
+	.cm-s-mozilla span.cm-property.cm-error {
+		color: var(--te) !important;
+	}
+	/* property error */
+	.cm-s-mozilla span.cm-number {
+		color: var(--th) !important;
+	}
+	/* number */
+	.cm-s-mozilla span.cm-string {
+		color: var(--ti) !important;
+	}
+	/* string */
+	.cm-s-mozilla span.cm-variable-2 {
+		color: var(--tj) !important;
+	}
+	/* variable 2 */
+	.cm-s-mozilla span.cm-qualifier {
+		color: var(--t8) !important;
+	}
+	/* class selector */
+	.cm-s-mozilla span.cm-tag {
+		color: var(--ta) !important;
+	}
+	/* element */
+	.cm-s-mozilla span.cm-variable-3 {
+		color: var(--tb) !important;
+	}
+	/* pseudo selector/element */
+	.cm-s-mozilla.CodeMirror .CodeMirror-matchingbracket {
+		color: var(--t6) !important;
+	}
+	/* matching bracket */
+	.cm-s-mozilla.CodeMirror .CodeMirror-nonmatchingbracket {
+		color: var(--t7) !important;
+	}
+	/* mismatching bracket */
+	.CodeMirror-code {
+		margin-bottom: 800px;
+	}
+	/* white space */
+
+	/* scrollbar */ /* AGENT_SHEET */
+	.theme-dark scrollbar[orient="vertical"] {
+		padding-bottom: 14px !important;
+		-moz-margin-start: -18px !important;
+		max-width: 10px !important;
+		min-width: 10px !important;
+	}
+	.theme-dark scrollbar[orient="horizontal"] {
+		margin-bottom: 0px !important;
+		margin-right: 10px !important;
+		margin-top: -18px !important;
+		max-height: 10px !important;
+		min-height: 10px !important;
+	}
+	.theme-dark #errors > scrollbar[orient="vertical"] {
+		margin-right: 2px !important;
+		padding: 0px !important;
+	}
+	scrollbar > slider > thumb,
+	scrollbarbutton[sbattr="scrollbar-up-top"],
+	scrollbarbutton[sbattr="scrollbar-down-bottom"] {
+		-moz-appearance: none !important;
+		background-color: var(--b8) !important;
+		display: -moz-box !important;
+	}
+	scrollbar:not(#foo) {
+		background-color: var(--b2) !important;
+	}
+}
