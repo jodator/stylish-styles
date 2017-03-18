@@ -1,0 +1,58 @@
+.code.dark pre.code {
+	background: #2b2b2b;
+	color: #808080;
+}
+
+.code.dark .line-numbers,
+.code.dark .diff-line-num {
+	background: #313335;
+	color: #606366;
+}
+
+.code.dark .nx,
+.code.dark .p,
+.code.dark .nb,
+.code.dark .o {
+	color: #a9b7c6;
+}
+
+
+
+.code.dark .nf {
+	color: #ffc66d;
+}
+
+.code.dark .k,
+.code.dark .na,
+.code.dark .cp {
+	color: #cc7832;
+}
+
+.line .na{
+	color: red;
+}
+.line .p ~ .na {
+	color: blue;
+}
+
+.code.dark .nv {
+	color: #9876aa;
+}
+
+.code.dark .s1 {
+	color: #6a8759;
+}
+
+.code.dark .mi,
+.code.dark .mo {
+	color: #6897bb;
+}
+
+.code.dark .sd {
+	color: #629755;
+}
+
+.code.dark .cm,
+.code.dark .c1 {
+	color: #808080;
+}
